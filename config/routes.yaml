@@ -1,0 +1,24 @@
+api_prediction_show:
+  path: /v1/predictions/{id}
+  controller: App\Controller\PredictionController::showAction
+  methods:    GET|HEAD
+api_predictions_show_all:
+    path: /v1/predictions
+    controller: App\Controller\PredictionController::showAllAction
+    methods:    GET|HEAD
+api_prediction_update:
+  path:    /v1/predictions/{id}
+  controller: App\Controller\PredictionController::updateAction
+  methods:    PUT
+api_prediction_delete:
+  path:    /v1/predictions/{id}
+  controller: App\Controller\PredictionController::deleteAction
+  methods:    DELETE
+api_prediction_create:
+  path:       /v1/predictions
+  controller: App\Controller\PredictionController::createAction
+  methods:    POST|OPTIONS
+api_status_change:
+  path:    /v1/predictions/{id}/status
+  controller: App\Controller\PredictionController::updateStatusAction
+  methods:    PUT
